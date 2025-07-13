@@ -22,7 +22,7 @@ const About = ({ darkMode }) => {
                 <div className="contact-info">
                   <div className="contact-item">
                     <i className="fas fa-envelope"></i>
-                    <span>pmgbao2004@gmail.com</span>
+                    <span>pmgbao2004@gmail.com.vn</span>
                   </div>
                   <div className="contact-item">
                     <i className="fas fa-phone"></i>
