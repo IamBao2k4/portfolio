@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.HOST_NAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          scripts: |
+          script: |
             sudo su ${{ secrets.USERNAME }}
             cd portfolio
             git checkout main
