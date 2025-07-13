@@ -17,7 +17,7 @@ jobs:
           port: 22
           script: |
             sudo su ${{ secrets.USERNAME }}
-            cd portfolio
+            cd /home/${{ secrets.USERNAME }}/portfolio
             git checkout main
             git pull
             npm install
