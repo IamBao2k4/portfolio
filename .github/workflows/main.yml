@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Deploy using ssh
         uses: appleboy/ssh-action@master
@@ -15,11 +15,12 @@ jobs:
           username: ${{ secrets.HOST_NAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
+          command_timeout: 600
           script: |
-            sudo su ${{ secrets.USERNAME }}
-            cd /home/${{ secrets.USERNAME }}/portfolio
+            cd /home/${{ secrets.HOST_NAME }}/portfolio
+            git config --global --add safe.directory /home/${{ secrets.HOST_NAME }}/portfolio
             git checkout main
             git pull
             npm install
             npm run build
-            pm2 restart 0
+            pm2 restart portfolio
