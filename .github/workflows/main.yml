@@ -20,7 +20,9 @@ jobs:
             cd /home/barous/portfolio
             git config --global --add safe.directory /home/barous/portfolio
             git checkout main
+            pm2 stop portfolio
             git pull
-            npm install
+            npm ci
             npm run build
             pm2 restart portfolio
+
