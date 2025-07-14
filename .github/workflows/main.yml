@@ -17,8 +17,8 @@ jobs:
           port: 22
           command_timeout: 600s
           script: |
-            cd /home/${{ secrets.HOST_NAME }}/portfolio
-            git config --global --add safe.directory /home/${{ secrets.HOST_NAME }}/portfolio
+            cd /home/barous/portfolio
+            git config --global --add safe.directory /home/barous/portfolio
             git checkout main
             git pull
             npm install
