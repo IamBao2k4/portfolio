@@ -14,7 +14,7 @@ const About = ({ darkMode }) => {
           <div className="about-left">
             <div className="profile-section">
               <div className="profile-image">
-                <img src="/api/placeholder/250/250" alt="Phan Minh Gia Bảo" />
+                <img src="/assets/ME.jpg" alt="Phan Minh Gia Bảo" className='items-center justify-center'/>
               </div>
               <div className="profile-info">
                 <h2>Phan Minh Gia Bảo</h2>

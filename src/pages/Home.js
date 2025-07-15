@@ -112,12 +112,12 @@ const Home = ({ darkMode }) => {
                     darkMode ? 'bg-dark-secondary' : 'bg-white'
                   } flex items-center justify-center`}>
                     <div className="w-72 h-72 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                      <span className="text-6xl font-bold text-gray-600">B</span>
+                      <img src="/assets/ME.jpg" alt="Logo" className="w-72 h-72 rounded-full object-cover" />
                     </div>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-accent rounded-full flex items-center justify-center">
-                  <Code size={24} className="text-white" />
+                <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-accent rounded-full flex items-center justify-center">
+                  <Code size={24} className="text-white bold" />
                 </div>
               </div>
             </div>
